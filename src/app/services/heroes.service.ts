@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { IHeroe } from '../Interfaces/IHeroe';
 
 @Injectable()
 export class HeroesService {
 
-  private heroes: any = [
+  private heroes: IHeroe[] = [
     {
       nombre: 'Aquaman',
       // tslint:disable-next-line:max-line-length
@@ -66,7 +67,7 @@ export class HeroesService {
     console.log('This service is ready to use...');
   }
 
-  getHeroes() {
+  getHeroes(): IHeroe[] {
     return this.heroes;
   }
 
