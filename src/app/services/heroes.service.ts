@@ -71,4 +71,8 @@ export class HeroesService {
     return this.heroes;
   }
 
+  getHeroe(index: number) {
+    return this.heroes[index];
+  }
+
 }
