@@ -75,4 +75,16 @@ export class HeroesService {
     return this.heroes[index];
   }
 
+  getHeroeByFilter(filter: string) {
+    const heroesFilter: IHeroe[] = [];
+    filter = filter.toLowerCase();
+
+    for (const hero of this.heroes) {
+      const heroName = hero.nombre.toLowerCase();
+      if (heroName.indexOf(filter) >= 0) {
+        heroesFilter.push(hero);
+      }
+    }
+  }
+
 }
