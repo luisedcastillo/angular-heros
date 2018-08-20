@@ -23,5 +23,4 @@ export class HeroesComponent implements OnInit {
   goHeroe(index: number) {
     this.router.navigate(['/heroe', index]);
   }
-
 }
