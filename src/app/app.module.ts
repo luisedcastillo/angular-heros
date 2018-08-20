@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeDetailComponent } from './components/heroe-detail/heroe-detail.component';
 import { HeroesFilteredComponent } from './components/heroes-filtered/heroes-filtered.component';
+import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HeroesFilteredComponent } from './components/heroes-filtered/heroes-fil
     HeroesComponent,
     HeroeDetailComponent,
     HeroesFilteredComponent,
+    HeroeCardComponent,
   ],
   imports: [
     BrowserModule,
